@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>templateeditor</class>
+ <widget class="QDialog" name="templateeditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>451</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>760</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Template Editor</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <widget class="QTableWidget" name="templateTable">
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>500</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Template:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="4">
+       <widget class="QLineEdit" name="templatenameLineEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Version:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLineEdit" name="versionLineEdit"/>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>License:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLineEdit" name="licenseLineEdit"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Group:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QComboBox" name="groupComboBox">
+        <item>
+         <property name="text">
+          <string>Amusement/Games/3D/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/3D/Race</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/3D/Shoot</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/3D/Simulation</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Action/Arcade</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Action/Breakout</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Action/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Action/Race</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Action/Shoot</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Board/Card</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Board/Chess</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Board/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Board/Pool</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Board/Puzzle</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Logic</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/RPG</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Strategy/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Strategy/Real Time</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Strategy/Turn Based</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Toys/Background</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Toys/Clocks</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Toys/Graphics</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Toys/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amusement/Games/Toys/Screensavers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Languages/C and C++</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Languages/Fortran</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Languages/Java</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Languages/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Languages/Perl</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Languages/Python</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Languages/Scheme</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Languages/Tcl</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Libraries/C and C++</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Libraries/Cross</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Libraries/GNOME</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Libraries/Java</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Libraries/KDE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Libraries/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Libraries/Parallel</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Libraries/Perl</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Libraries/Python</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Libraries/Tcl</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Libraries/X11</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Libraries/YaST</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Sources</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Tools/Building</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Tools/Debuggers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Tools/Doc Generators</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Tools/GUI Builders</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Tools/IDE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Tools/Navigators</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Tools/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Development/Tools/Version Control</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Documentation/Howto</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Documentation/HTML</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Documentation/Man</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Documentation/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Documentation/SuSE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/Fax</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/ISDN</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/Joystick</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/Mobile</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/Modem</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/Palm</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/Printing</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/Psion</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/Radio</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/Scanner</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/TV</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hardware/UPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Archiving/Backup</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Archiving/Compression</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Clustering/Computing</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Databases/Clients</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Databases/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Databases/Tools</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Editors/Emacs</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Editors/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Editors/Vi</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/File utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Graphics/3D Editors</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Graphics/Bitmap Editors</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Graphics/CAD</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Graphics/Convertors</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Graphics/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Graphics/Vector Editors</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Graphics/Viewers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Graphics/Visualization/Graph</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Graphics/Visualization/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Graphics/Visualization/Raytracers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Hamradio/Fax</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Hamradio/Logging</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Hamradio/Morse</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Hamradio/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Hamradio/Packet</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Hamradio/Psk31</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Hamradio/Satellite</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Multimedia/CD/Grabbers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Multimedia/CD/Players</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Multimedia/CD/Record</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Multimedia/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Multimedia/Sound/Editors and Convertors</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Multimedia/Sound/Midi</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Multimedia/Sound/Mixers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Multimedia/Sound/Players</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Multimedia/Sound/Utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Multimedia/Sound/Visualization</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Multimedia/Video/Editors and Convertors</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Multimedia/Video/Players</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/AOLInstantMessenger</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Archie</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Boot/Clients</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Boot/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Boot/Utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Diagnostic</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/DNS/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/DNS/Utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Email/Clients</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Email/Mailinglists</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Email/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Email/Utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Ftp/Clients</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Ftp/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/ICQ</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/IRC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/LDAP/Clients</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/LDAP/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/LDAP/Utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Napster</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/News/Clients</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/News/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/News/Utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/NFS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/NIS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Novell</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/PPP</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Radius/Clients</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Radius/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Routing</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Samba</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Security</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/SSH</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/System</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Talk/Clients</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Talk/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Web/Browsers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Web/Frontends</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Web/Proxy</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Web/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Networking/Web/Utitlities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Office/Dictionary</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Office/Finace</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Office/Organizers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Office/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Office/Spreadsheets</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Office/Suite</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/DocBook</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/HTML/Editors</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/HTLM/Tools</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/PDF</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/Presentation</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/PS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/SGML</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/TeX/Base</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/TeX/Fonts</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/TeX/Frontends</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/TeX/Utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/Texinfo</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/Troff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/Word</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/XML</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/Scientific/Astronomy</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/Scientific/Chemistry</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/Scientific/Electronics</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/Scientific/Math</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/Scientific/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Publishing/Scientific/Physics</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Security</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Telephony/Clients</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Telephony/H323/Clients</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Telephony/H323/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Telephony/H323/Utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Telephony/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Telephony/SIP/Clients</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Telephony/SIP/Servers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Telephony/SIP/Utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Telephony/Utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Text/Convertors</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Text/Spell</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Productivity/Text/Utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Base</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Benchmark</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Boot</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Console</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Daemons</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Emulators/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Emulators/PC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Fhs</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Filesystems</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/GUI/GNOME</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/GUI/KDE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/GUI/Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/I18n/Cinese</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/I18n/Japanese</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/I18n/Korean</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Kernel</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Libraries</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Management</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Monitoring</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Packages</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Shells</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/Sound Daemons</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/X11/Displaymanagers</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/X11/Fonts</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/X11/Icons</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/X11/Servers/XF86_3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/X11/Servers/XF86_4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/X11/Terminals</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/X11/Utilities</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>System/YaST</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Distribution:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QComboBox" name="distributionComboBox">
+        <item>
+         <property name="text">
+          <string>Other</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OpenSuSE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ubuntu</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>PCLinuxOS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Red Hat</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mandriva</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Debian</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mint Linux</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="5">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>Build Commands</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QPlainTextEdit" name="buildCommandsPlainTextEdit"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="title">
+            <string>Install Commands</string>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QPlainTextEdit" name="installCommandsPlainTextEdit"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QPushButton" name="submitButton">
+        <property name="text">
+         <string>submit changes</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="delTemplateButton">
+     <property name="text">
+      <string>Del Template</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>430</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>close</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>delTemplateButton</sender>
+   <signal>clicked()</signal>
+   <receiver>templateeditor</receiver>
+   <slot>slot_delTemplateButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>446</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>261</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>submitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>templateeditor</receiver>
+   <slot>slot_submitButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>748</x>
+     <y>409</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>759</x>
+     <y>400</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>templateTable</sender>
+   <signal>cellClicked(int,int)</signal>
+   <receiver>templateeditor</receiver>
+   <slot>slot_templateTableClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>327</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>templateeditor</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>703</x>
+     <y>435</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>672</x>
+     <y>430</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>distributionComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>templateeditor</receiver>
+   <slot>slot_distroComboBoxValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>673</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>756</x>
+     <y>73</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_submitButtonClicked()</slot>
+  <slot>slot_delTemplateButtonClicked()</slot>
+  <slot>slot_templateTableClicked()</slot>
+  <slot>slot_distroComboBoxValueChanged()</slot>
+ </slots>
+</ui>

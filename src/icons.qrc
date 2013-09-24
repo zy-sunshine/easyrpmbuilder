@@ -1,0 +1,35 @@
+<RCC>
+  <qresource prefix="icon" >
+    <file>icons/configure.png</file>
+    <file>icons/exit.png</file>
+    <file>icons/help.png</file>
+    <file>icons/new.png</file>
+    <file>icons/open.png</file>
+    <file>icons/saveas.png</file>
+    <file>icons/save.png</file>
+    <file>icons/settings.png</file>
+    <file>icons/rpm.png</file>
+    <file>icons/qt.png</file>
+    <file>icons/back.png</file>
+    <file>icons/forward.png</file>
+    <file>icons/gohome.png</file>
+    <file>icons/logview.png</file>
+    <file>icons/add.png</file>
+    <file>icons/del.png</file>
+    <file>icons/source.png</file>
+    <file>icons/binary.png</file>
+    <file>icons/both.png</file>
+    <file>icons/conflicts.png</file>
+    <file>icons/require.png</file>
+    <file>icons/obsolete.png</file>
+    <file>icons/provides.png</file>
+    <file>icons/editsources.png</file>
+    <file>icons/editpatches.png</file>
+    <file>icons/logo.png</file>
+    <file>icons/showmacros.png</file>
+    <file>icons/skull.png</file>
+    <file>icons/rebuild.png</file>
+    <file>icons/print.png</file>
+    <file>icons/configtoolbar.png</file>
+  </qresource>
+</RCC>

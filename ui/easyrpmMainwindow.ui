@@ -1,0 +1,3267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EasyRPMMainWindow</class>
+ <widget class="QMainWindow" name="EasyRPMMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>840</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>EasyRPM Builder</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/icon/icons/rpm.png</normaloff>:/icon/icons/rpm.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Name:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="nameLineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>125</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Name of the application</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Version:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3" colspan="2">
+          <widget class="QLineEdit" name="versionLineEdit">
+           <property name="toolTip">
+            <string>Version number (e.g. 0.1.3)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>View ChangLog</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>:/icon/icons/logview.png</normaloff>:/icon/icons/logview.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QPushButton" name="pushButton">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="5">
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Start / create rebuild script</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>:/icon/icons/rebuild.png</normaloff>:/icon/icons/rebuild.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="defaultSource0Button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string>Set default tar/zip sources</string>
+           </property>
+           <property name="text">
+            <string>(源码包)Source0:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="defaultSource1Button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="toolTip">
+            <string>Set default Desktop File</string>
+           </property>
+           <property name="text">
+            <string>(菜单配置file)Source1:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="3">
+          <widget class="QLineEdit" name="sourceLineEdit">
+           <property name="toolTip">
+            <string>Path to the tar/zip sources. This could be a local file or a url</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1" colspan="3">
+          <widget class="QLineEdit" name="source1LineEdit">
+           <property name="toolTip">
+            <string>Path to the Desktop File. This could be a (*.desktop) file.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="5">
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Edit/Create Desktop File</string>
+           </property>
+           <property name="text">
+            <string>Edit</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,0,0,0">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Release:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="releaseSpinBox">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Release number of the application</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QComboBox" name="licenceComboBox">
+           <property name="toolTip">
+            <string>License used to publish this application</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>GPL v2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GPL v3</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>LGPL v3</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GFDL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Group:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QComboBox" name="groupComboBoxMagic">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Software group of the application(Only For MagicLinux)</string>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>娱乐/游戏</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/互联网</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/出版</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/多媒体</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/工具</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/工程</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/归档</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/数据库</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/文件</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/文本</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/模拟器</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/生产力</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/系统</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/编辑器</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>应用程序/通讯</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>开发/工具</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>开发/库</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>开发/系统</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>开发/语言</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>开发/调试器</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>文档</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>用户界面/X</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>用户界面/桌面</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>系统环境/内核</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>系统环境/基本</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>系统环境/外壳</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>系统环境/库</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>系统环境/服务</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Licence:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2" colspan="2">
+          <widget class="QLabel" name="label_8">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Only For MagicLinux</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="groupComboBox">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Software group of the application</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/3D/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/3D/Race</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/3D/Shoot</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/3D/Simulation</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Action/Arcade</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Action/Breakout</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Action/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Action/Race</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Action/Shoot</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Board/Card</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Board/Chess</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Board/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Board/Pool</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Board/Puzzle</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Logic</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/RPG</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Strategy/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Strategy/Real Time</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Strategy/Turn Based</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Toys/Background</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Toys/Clocks</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Toys/Graphics</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Toys/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Amusement/Games/Toys/Screensavers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Languages/C and C++</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Languages/Fortran</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Languages/Java</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Languages/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Languages/Perl</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Languages/Python</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Languages/Scheme</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Languages/Tcl</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Libraries/C and C++</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Libraries/Cross</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Libraries/GNOME</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Libraries/Java</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Libraries/KDE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Libraries/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Libraries/Parallel</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Libraries/Perl</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Libraries/Python</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Libraries/Tcl</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Libraries/X11</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Libraries/YaST</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Sources</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Tools/Building</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Tools/Debuggers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Tools/Doc Generators</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Tools/GUI Builders</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Tools/IDE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Tools/Navigators</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Tools/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Development/Tools/Version Control</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Documentation/Howto</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Documentation/HTML</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Documentation/Man</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Documentation/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Documentation/SuSE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/Fax</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/ISDN</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/Joystick</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/Mobile</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/Modem</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/Palm</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/Printing</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/Psion</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/Radio</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/Scanner</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/TV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hardware/UPS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Archiving/Backup</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Archiving/Compression</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Clustering/Computing</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Databases/Clients</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Databases/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Databases/Tools</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Editors/Emacs</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Editors/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Editors/Vi</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/File utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Graphics/3D Editors</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Graphics/Bitmap Editors</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Graphics/CAD</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Graphics/Convertors</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Graphics/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Graphics/Vector Editors</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Graphics/Viewers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Graphics/Visualization/Graph</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Graphics/Visualization/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Graphics/Visualization/Raytracers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Hamradio/Fax</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Hamradio/Logging</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Hamradio/Morse</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Hamradio/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Hamradio/Packet</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Hamradio/Psk31</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Hamradio/Satellite</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Multimedia/CD/Grabbers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Multimedia/CD/Players</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Multimedia/CD/Record</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Multimedia/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Multimedia/Sound/Editors and Convertors</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Multimedia/Sound/Midi</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Multimedia/Sound/Mixers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Multimedia/Sound/Players</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Multimedia/Sound/Utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Multimedia/Sound/Visualization</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Multimedia/Video/Editors and Convertors</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Multimedia/Video/Players</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/AOLInstantMessenger</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Archie</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Boot/Clients</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Boot/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Boot/Utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Diagnostic</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/DNS/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/DNS/Utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Email/Clients</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Email/Mailinglists</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Email/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Email/Utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Ftp/Clients</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Ftp/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/ICQ</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/IRC</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/LDAP/Clients</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/LDAP/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/LDAP/Utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Napster</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/News/Clients</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/News/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/News/Utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/NFS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/NIS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Novell</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/PPP</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Radius/Clients</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Radius/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Routing</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Samba</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Security</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/SSH</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/System</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Talk/Clients</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Talk/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Web/Browsers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Web/Frontends</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Web/Proxy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Web/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Networking/Web/Utitlities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Office/Dictionary</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Office/Finace</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Office/Organizers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Office/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Office/Spreadsheets</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Office/Suite</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/DocBook</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/HTML/Editors</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/HTLM/Tools</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/PDF</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/Presentation</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/PS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/SGML</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/TeX/Base</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/TeX/Fonts</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/TeX/Frontends</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/TeX/Utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/Texinfo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/Troff</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/Word</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/XML</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/Scientific/Astronomy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/Scientific/Chemistry</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/Scientific/Electronics</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/Scientific/Math</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/Scientific/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Publishing/Scientific/Physics</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Security</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Telephony/Clients</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Telephony/H323/Clients</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Telephony/H323/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Telephony/H323/Utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Telephony/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Telephony/SIP/Clients</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Telephony/SIP/Servers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Telephony/SIP/Utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Telephony/Utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Text/Convertors</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Text/Spell</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Productivity/Text/Utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Base</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Benchmark</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Boot</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Console</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Daemons</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Emulators/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Emulators/PC</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Fhs</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Filesystems</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/GUI/GNOME</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/GUI/KDE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/GUI/Other</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/I18n/Cinese</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/I18n/Japanese</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/I18n/Korean</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Kernel</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Libraries</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Management</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Monitoring</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Packages</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Shells</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/Sound Daemons</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/X11/Displaymanagers</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/X11/Fonts</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/X11/Icons</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/X11/Servers/XF86_3</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/X11/Servers/XF86_4</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/X11/Terminals</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/X11/Utilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>System/YaST</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Group:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2" colspan="2">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>For All Distribution</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="defaultVendorButton">
+           <property name="toolTip">
+            <string>Set default vendor</string>
+           </property>
+           <property name="text">
+            <string>Vendor:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="vendorLineEdit">
+           <property name="toolTip">
+            <string>Vendor of the application. (e.g. your company or just your name)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="defaultPackagerButton">
+           <property name="toolTip">
+            <string>set default packager</string>
+           </property>
+           <property name="text">
+            <string>Packager:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLineEdit" name="packagerLineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Name of the person / group who packaged this application (e.g. your name)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Distribution:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QComboBox" name="distributionComboBox">
+           <property name="toolTip">
+            <string>Name of the distribuion for wich the package was made</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>MagicLinux</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Fedora</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>OpenSuSE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PCLinuxOS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Red Hat</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Mandriva</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ubuntu</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Debian</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Mint Linux</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Other</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="5">
+          <widget class="QLineEdit" name="urlLineEdit">
+           <property name="toolTip">
+            <string>URLto the projects homepage</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>Summary:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1" colspan="5">
+          <widget class="QLineEdit" name="summaryLineEdit">
+           <property name="toolTip">
+            <string>A brief description of the application</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="defaultHomepageButton">
+           <property name="toolTip">
+            <string>set default URL</string>
+           </property>
+           <property name="text">
+            <string>Homepage:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>Summary(zh_CN.GB18030):</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1" colspan="5">
+          <widget class="QLineEdit" name="summaryGBLineEdit">
+           <property name="toolTip">
+            <string>A brief description of the application(can use Chinese)</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Application Description</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="QTextEdit" name="descriptionTextEdit"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_5">
+          <attribute name="title">
+           <string>Description(zh_CN.GB18030)</string>
+          </attribute>
+          <widget class="QTextEdit" name="descriptionGBTextEdit">
+           <property name="geometry">
+            <rect>
+             <x>4</x>
+             <y>4</y>
+             <width>929</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>Build Commands</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="buildRootPathEdit"/>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="buildRootPathButton">
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="3">
+            <widget class="QPlainTextEdit" name="buildPlainTextEdit"/>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="defaultBuildrootButton">
+             <property name="toolTip">
+              <string>set default URL</string>
+             </property>
+             <property name="text">
+              <string>Build Root Path:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>Install Commands</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0">
+            <widget class="QPlainTextEdit" name="installPlainTextEdit"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_4">
+          <attribute name="title">
+           <string>Installation Files</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="0">
+            <widget class="QPlainTextEdit" name="filesPlainTextEdit"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>System Output</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>648</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QPlainTextEdit" name="systemOutput"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1010</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="recentlyUsedMenu">
+     <property name="title">
+      <string>Recently used files</string>
+     </property>
+    </widget>
+    <addaction name="actionNew_SPEC_File"/>
+    <addaction name="actionOpen_SPEC_File"/>
+    <addaction name="recentlyUsedMenu"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_SPEC_File"/>
+    <addaction name="actionSave_SPEC_File_as"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint_SPEC_File"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Settings">
+    <property name="title">
+     <string>&amp;Options</string>
+    </property>
+    <addaction name="actionSettings"/>
+    <addaction name="separator"/>
+    <addaction name="actionConfig_Tool_Bars"/>
+    <addaction name="separator"/>
+    <addaction name="actionTemplate_Editor"/>
+    <addaction name="actionOpen_Template"/>
+    <addaction name="separator"/>
+    <addaction name="actionOption_ToolBar"/>
+    <addaction name="actionProject_ToolBar"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="action_About"/>
+    <addaction name="actionAbout_Qt"/>
+    <addaction name="separator"/>
+    <addaction name="actionRPM_how_to"/>
+   </widget>
+   <widget class="QMenu" name="menuProject">
+    <property name="title">
+     <string>&amp;Project</string>
+    </property>
+    <widget class="QMenu" name="menuOptional_Sections_2">
+     <property name="title">
+      <string>Optional Sections</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/icon/icons/settings.png</normaloff>:/icon/icons/settings.png</iconset>
+     </property>
+     <addaction name="actionEdit_Requires"/>
+     <addaction name="actionEdit_Provides"/>
+     <addaction name="actionEdit_Conflicts"/>
+     <addaction name="actionEdit_Obsoletes"/>
+    </widget>
+    <addaction name="actionEdit_Sources"/>
+    <addaction name="actionEdit_patches"/>
+    <addaction name="separator"/>
+    <addaction name="menuOptional_Sections_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_etc_rpm_macros"/>
+   </widget>
+   <widget class="QMenu" name="menu_Build">
+    <property name="title">
+     <string>&amp;Build</string>
+    </property>
+    <addaction name="actionBuild_binary_only"/>
+    <addaction name="actionBuild_source_only"/>
+    <addaction name="actionBuild_all"/>
+    <addaction name="separator"/>
+    <addaction name="actionRebuild_sources"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menuProject"/>
+   <addaction name="menu_Build"/>
+   <addaction name="menu_Settings"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="FileToolBar">
+   <property name="windowTitle">
+    <string>File Tool Bar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="ProjectToolBar">
+   <property name="windowTitle">
+    <string>Project Tool Bar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="action_Quit">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/exit.png</normaloff>:/icon/icons/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="actionOpen_SPEC_File">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/open.png</normaloff>:/icon/icons/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open SPEC-File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave_SPEC_File">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/save.png</normaloff>:/icon/icons/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save SPEC-File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_SPEC_File_as">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/saveas.png</normaloff>:/icon/icons/saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save SPEC-File as</string>
+   </property>
+  </action>
+  <action name="actionStart_RPM_Build">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/configure.png</normaloff>:/icon/icons/configure.png</iconset>
+   </property>
+   <property name="text">
+    <string>start RPM Build</string>
+   </property>
+  </action>
+  <action name="actionOther_Project">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/new.png</normaloff>:/icon/icons/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Other Project</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/configure.png</normaloff>:/icon/icons/configure.png</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionTemplate_Editor">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/settings.png</normaloff>:/icon/icons/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Template Editor</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionOpen_Template">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/open.png</normaloff>:/icon/icons/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open Template</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/rpm.png</normaloff>:/icon/icons/rpm.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/qt.png</normaloff>:/icon/icons/qt.png</iconset>
+   </property>
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionRPM_how_to">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/help.png</normaloff>:/icon/icons/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>RPM how-to</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionNew_SPEC_File">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/new.png</normaloff>:/icon/icons/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>New SPEC-File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionBuild_binary_only">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/binary.png</normaloff>:/icon/icons/binary.png</iconset>
+   </property>
+   <property name="text">
+    <string>build binary only</string>
+   </property>
+   <property name="shortcut">
+    <string>F6</string>
+   </property>
+  </action>
+  <action name="actionBuild_source_only">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/source.png</normaloff>:/icon/icons/source.png</iconset>
+   </property>
+   <property name="text">
+    <string>build source only</string>
+   </property>
+   <property name="shortcut">
+    <string>F7</string>
+   </property>
+  </action>
+  <action name="actionBuild_all">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/both.png</normaloff>:/icon/icons/both.png</iconset>
+   </property>
+   <property name="text">
+    <string>build all</string>
+   </property>
+   <property name="shortcut">
+    <string>F8</string>
+   </property>
+  </action>
+  <action name="actionEdit_Sources">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/editsources.png</normaloff>:/icon/icons/editsources.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Sources</string>
+   </property>
+   <property name="shortcut">
+    <string>F4</string>
+   </property>
+  </action>
+  <action name="actionEdit_patches">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/editpatches.png</normaloff>:/icon/icons/editpatches.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Patches</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionEdit_Requires">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/require.png</normaloff>:/icon/icons/require.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Requires</string>
+   </property>
+  </action>
+  <action name="actionEdit_Provides">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/provides.png</normaloff>:/icon/icons/provides.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Provides</string>
+   </property>
+  </action>
+  <action name="actionEdit_Conflicts">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/conflicts.png</normaloff>:/icon/icons/conflicts.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Conflicts</string>
+   </property>
+  </action>
+  <action name="actionEdit_Obsoletes">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/obsolete.png</normaloff>:/icon/icons/obsolete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Obsoletes</string>
+   </property>
+  </action>
+  <action name="actionProject_ToolBar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Project ToolBar</string>
+   </property>
+  </action>
+  <action name="actionOption_ToolBar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Option ToolBar</string>
+   </property>
+  </action>
+  <action name="actionShow_etc_rpm_macros">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/showmacros.png</normaloff>:/icon/icons/showmacros.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show / Edit Macros</string>
+   </property>
+  </action>
+  <action name="actionPrint_SPEC_File">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/print.png</normaloff>:/icon/icons/print.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print SPEC-File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionRebuild_sources">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/rebuild.png</normaloff>:/icon/icons/rebuild.png</iconset>
+   </property>
+   <property name="text">
+    <string>rebuild sources</string>
+   </property>
+   <property name="shortcut">
+    <string>F9</string>
+   </property>
+  </action>
+  <action name="actionConfig_Tool_Bars">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/icons/configtoolbar.png</normaloff>:/icon/icons/configtoolbar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Config Tool Bars</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>nameLineEdit</tabstop>
+  <tabstop>versionLineEdit</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>releaseSpinBox</tabstop>
+  <tabstop>licenceComboBox</tabstop>
+  <tabstop>sourceLineEdit</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>vendorLineEdit</tabstop>
+  <tabstop>packagerLineEdit</tabstop>
+  <tabstop>distributionComboBox</tabstop>
+  <tabstop>urlLineEdit</tabstop>
+  <tabstop>summaryLineEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_Quit</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOpen_SPEC_File</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionOpenSpecFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_SPEC_File</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionSaveSpecFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_sourceSearchButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>418</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>643</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSave_SPEC_File_as</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionSaveSpecFileAs()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>322</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sourceLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>305</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>343</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>groupComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>785</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>680</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>licenceComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>995</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>760</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>packagerLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>643</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>urlLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>354</x>
+     <y>198</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>147</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>summaryLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>449</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nameLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_nameContentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>311</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>versionLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_versionContentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>437</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>506</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>vendorLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_vendorContentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSettings</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTemplate_Editor</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionTemplateEditor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOpen_Template</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionOpenTemplate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>releaseSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>582</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>776</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAbout_Qt</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_aboutQt()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_About</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_about()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRPM_how_to</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_rpmHowTo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionLogView()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>462</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>236</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>distributionComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_distroComboBoxValueChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>995</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>847</x>
+     <y>153</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionNew_SPEC_File</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionNewOtherSpecFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>424</x>
+     <y>322</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionBuild_binary_only</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_buildBinaryOnlyButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionBuild_source_only</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_buildSourceOnlyButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionBuild_all</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_buildPackageButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>descriptionTextEdit</sender>
+   <signal>textChanged()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>369</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>367</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buildPlainTextEdit</sender>
+   <signal>textChanged()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>433</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>installPlainTextEdit</sender>
+   <signal>textChanged()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>433</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>filesPlainTextEdit</sender>
+   <signal>textChanged()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>89</x>
+     <y>433</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEdit_Sources</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_editSources()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEdit_patches</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_editPatches()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEdit_Conflicts</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionEditConflictsActivated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEdit_Provides</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionEditProvidesActivated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEdit_Requires</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionEditRequiresActivated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEdit_Obsoletes</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionEditObsoletesActivated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionProject_ToolBar</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionProjectToolBar(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOption_ToolBar</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionOptionToolBar(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionShow_etc_rpm_macros</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionShowMacrosActivated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_rebuildButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>481</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPrint_SPEC_File</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionPrintSpecFileActivated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>defaultVendorButton</sender>
+   <signal>clicked()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_vendorButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>44</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>defaultPackagerButton</sender>
+   <signal>clicked()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_packagerButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>553</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>838</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>defaultHomepageButton</sender>
+   <signal>clicked()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_homepageButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>838</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRebuild_sources</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_rebuildButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionConfig_Tool_Bars</sender>
+   <signal>activated()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_actionConfigToolBars()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>defaultBuildrootButton</sender>
+   <signal>clicked()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_buildrootButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>151</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>133</x>
+     <y>670</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buildRootPathButton</sender>
+   <signal>clicked()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_buildRootPathButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>988</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1036</x>
+     <y>218</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>defaultSource0Button</sender>
+   <signal>clicked()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_sourceButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>59</x>
+     <y>677</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buildRootPathEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>324</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>242</x>
+     <y>687</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>defaultSource1Button</sender>
+   <signal>clicked()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_source1ButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>86</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>84</x>
+     <y>-33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>source1LineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_contentChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>223</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>214</x>
+     <y>-50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_source1SearchButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>417</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>400</x>
+     <y>-36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>EasyRPMMainWindow</receiver>
+   <slot>slot_editDesktopFileButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>452</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>452</x>
+     <y>-64</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_actionOpenSpecFile()</slot>
+  <slot>slot_actionSaveSpecFile()</slot>
+  <slot>slot_sourceSearchButtonClicked()</slot>
+  <slot>slot_actionSaveSpecFileAs()</slot>
+  <slot>slot_actionOptionStartRPMBuild()</slot>
+  <slot>slot_buildPackageButtonClicked()</slot>
+  <slot>slot_actionNewOtherSpecFile()</slot>
+  <slot>slot_contentChanged()</slot>
+  <slot>slot_nameContentChanged()</slot>
+  <slot>slot_versionContentChanged()</slot>
+  <slot>slot_vendorContentChanged()</slot>
+  <slot>slot_actionSettings()</slot>
+  <slot>slot_buildBinaryOnlyButtonClicked()</slot>
+  <slot>slot_buildSourceOnlyButtonClicked()</slot>
+  <slot>slot_actionTemplateEditor()</slot>
+  <slot>slot_actionOpenTemplate()</slot>
+  <slot>slot_about()</slot>
+  <slot>slot_aboutQt()</slot>
+  <slot>slot_rpmHowTo()</slot>
+  <slot>slot_actionLogView()</slot>
+  <slot>slot_distroComboBoxValueChanged()</slot>
+  <slot>slot_buildRootPathButtonClicked()</slot>
+  <slot>slot_editSources()</slot>
+  <slot>slot_editPatches()</slot>
+  <slot>slot_actionEditObsoletedActivated()</slot>
+  <slot>slot_actionEditRequiresActivated()</slot>
+  <slot>slot_actionEditProvidesActivated()</slot>
+  <slot>slot_actionEditConflictsActivated()</slot>
+  <slot>slot_actionEditObsoletesActivated()</slot>
+  <slot>slot_actionOptionToolBar(bool)</slot>
+  <slot>slot_actionProjectToolBar(bool)</slot>
+  <slot>slot_actionShowMacrosActivated()</slot>
+  <slot>slot_rebuildButtonClicked()</slot>
+  <slot>slot_actionPrintSpecFileActivated()</slot>
+  <slot>slot_vendorButtonClicked()</slot>
+  <slot>slot_packagerButtonClicked()</slot>
+  <slot>slot_homepageButtonClicked()</slot>
+  <slot>slot_actionConfigToolBars()</slot>
+  <slot>slot_buildrootButtonClicked()</slot>
+  <slot>slot_sourceButtonClicked()</slot>
+  <slot>slot_source1ButtonClicked()</slot>
+  <slot>slot_source1SearchButtonClicked()</slot>
+  <slot>slot_editDesktopFileButtonClicked()</slot>
+ </slots>
+</ui>

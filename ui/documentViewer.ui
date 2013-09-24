@@ -1,0 +1,177 @@
+<ui version="4.0" >
+ <class>documentViewer</class>
+ <widget class="QDialog" name="documentViewer" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>528</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2" >
+   <item row="0" column="0" >
+    <widget class="QPushButton" name="pushButton_2" >
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../src/icons.qrc" >
+       <normaloff>:/icon/icons/back.png</normaloff>:/icon/icons/back.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QPushButton" name="pushButton_3" >
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../src/icons.qrc" >
+       <normaloff>:/icon/icons/forward.png</normaloff>:/icon/icons/forward.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" >
+    <widget class="QPushButton" name="pushButton_4" >
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../src/icons.qrc" >
+       <normaloff>:/icon/icons/gohome.png</normaloff>:/icon/icons/gohome.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3" colspan="2" >
+    <spacer name="horizontalSpacer_2" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>545</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0" colspan="5" >
+    <widget class="QFrame" name="frame" >
+     <property name="frameShape" >
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" >
+      <item row="0" column="0" >
+       <widget class="QTextEdit" name="document" >
+        <property name="readOnly" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="4" >
+    <spacer name="horizontalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>692</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="4" >
+    <widget class="QPushButton" name="pushButton" >
+     <property name="text" >
+      <string>close</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../src/icons.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>documentViewer</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>765</x>
+     <y>523</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>486</x>
+     <y>372</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>documentViewer</receiver>
+   <slot>slot_goHomeButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>83</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>263</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>documentViewer</receiver>
+   <slot>slot_forwardButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>49</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>180</x>
+     <y>17</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>documentViewer</receiver>
+   <slot>slot_backButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>12</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>458</x>
+     <y>22</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_backButtonClicked()</slot>
+  <slot>slot_forwardButtonClicked()</slot>
+  <slot>slot_goHomeButtonClicked()</slot>
+ </slots>
+</ui>

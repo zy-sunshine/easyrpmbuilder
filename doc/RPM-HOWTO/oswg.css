@@ -1,0 +1,117 @@
+/* 
+   Open Source Writers Group
+   Cascading Style Sheet v0.1
+      for db2html output
+      designed by: Deb Richardson <deb@oswg.org>
+      November 6, 1999
+*/
+
+/* GENERAL */
+
+body			{ background-color: white }
+
+a.link			{ color: #0000ff }
+a.active		{ color: #ff00ff }
+a.visited		{ color: #ff00ff }
+
+th			{ font-family: arial }
+td			{ font-family: arial }
+
+div			{ } 
+h1			{ font-family: arial }
+h2			{ font-family: arial }
+h3			{ font-family: arial }
+h4			{ font-family: arial }
+h5			{ font-family: arial }
+
+li			{ list-style-type: square }
+
+p			{ font-family: arial }
+p.literallayout		{ font-family: courier;
+			  font-size: 90% }
+
+b			{ }
+b.command		{ font-family: courier;
+			  font-size: 90% }
+
+i			{ }
+i.emphasis		{ }
+i.citetitle		{ text-decoration: underline }
+
+tt			{ font-family: courier;
+			  font-size: 90% }
+tt.literal		{ }
+tt.filename		{ }
+tt.replaceable		{ font-size: 90% }
+tt.computeroutput	{ }
+
+pre.programlisting	{ font-family: courier;
+			  font-size: 90% }
+
+/* ARTICLE HEADER */
+
+div.article 		{ font-family: arial }
+div.titlepage		{ }
+div.titlepage div	{ font-family: arial }
+h1.title		{ font-size: 180% }
+
+/* AUTHOR INFORMATION */
+
+h3.author		{ margin-left: +1cm }
+div.affiliation		{ }
+div.address		{ }
+p.address		{ }
+
+/* REVISION INFORMATION */
+
+div.revhistory		{ width: 100% }
+div.revhistory th	{ font-size: medium;
+			  font-weight: bold }
+div.revhistory td	{ font-size: small }
+
+/* TABLE OF CONTENTS */
+
+div.toc a		{ font-family: arial;
+			  margin-left: +1cm }
+div.toc b		{ font-family: arial }
+
+/* SECT1 */
+
+div.sect1		{ font-family: arial }
+h1.sect1		{ font-size: large }
+div.sect1 p		{ margin-left: +0.5cm }
+
+/* SECT2 */
+
+div.sect2		{ margin-left: +1cm }
+h2.sect2		{ font-size: medium }
+
+/* SECT3 */
+
+div.sect3		{ margin-left: +0.5cm }
+h3.sect3		{ font-size: medium }
+
+/* SECT4 */
+
+div.sect4		{ margin-left: +0.5cm }
+h4.sect4		{ font-size: medium }
+
+/* SECT5 */
+
+div.sect5		{ margin-left: +0.5cm }
+h5.sect5		{ font-size: medium }
+
+/* NAVHEADER */
+
+div.navheader		{ }
+div.navheader th	{ font-size: large;
+			  font-weight: normal }
+div.navheader td	{ font-size: small }
+
+/* NAVFOOTER */
+
+div.navfooter		{ }
+div.navfooter th	{ font-size: small }
+div.navfooter td	{ font-size: small }
+
+

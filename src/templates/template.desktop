@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=<你的程序名称 英文>
+GenericName[zh_CN]=<你的程序名称 中文>
+Comment[zh_CN]=<程序注释 中文>
+Exec=<程序运行命令 例如: /opt/kde3/bin/program>
+Icon=<显示在开始菜单中的图标 例如:/usr/share/yourProgram/yourIcon.png>
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Application;Network;

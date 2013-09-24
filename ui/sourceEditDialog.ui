@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sourceEditDialog</class>
+ <widget class="QDialog" name="sourceEditDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>582</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sources Editor</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>308</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="discardButton">
+       <property name="text">
+        <string>discard</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="submitButton">
+       <property name="text">
+        <string>submit</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="mainGroupBox">
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>253</red>
+           <green>252</green>
+           <blue>250</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>115</red>
+           <green>110</green>
+           <blue>103</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>253</red>
+           <green>252</green>
+           <blue>250</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>115</red>
+           <green>110</green>
+           <blue>103</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>115</red>
+           <green>110</green>
+           <blue>103</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>115</red>
+           <green>110</green>
+           <blue>103</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QTableWidget" name="sourceTableWidget">
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="columnCount">
+         <number>1</number>
+        </property>
+        <attribute name="horizontalHeaderCascadingSectionResizes">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>560</number>
+        </attribute>
+        <column/>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="sourceLabel">
+          <property name="text">
+           <string>Source :</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="sourceLineEdit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="sourceBrowseButton">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>328</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="delButton">
+          <property name="text">
+           <string>del</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../src/icons.qrc">
+            <normaloff>:/icon/icons/del.png</normaloff>:/icon/icons/del.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addButton">
+          <property name="text">
+           <string>add</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../src/icons.qrc">
+            <normaloff>:/icon/icons/add.png</normaloff>:/icon/icons/add.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Sources - excluded SOURCE0 - This is handled in the main window</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../src/icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>discardButton</sender>
+   <signal>clicked()</signal>
+   <receiver>sourceEditDialog</receiver>
+   <slot>slot_discardButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>94</x>
+     <y>354</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>submitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>sourceEditDialog</receiver>
+   <slot>slot_submitButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>522</x>
+     <y>348</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sourceTableWidget</sender>
+   <signal>cellClicked(int,int)</signal>
+   <receiver>sourceEditDialog</receiver>
+   <slot>slot_tableClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>34</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sourceBrowseButton</sender>
+   <signal>clicked()</signal>
+   <receiver>sourceEditDialog</receiver>
+   <slot>slot_browseButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>537</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>579</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>delButton</sender>
+   <signal>clicked()</signal>
+   <receiver>sourceEditDialog</receiver>
+   <slot>slot_delButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>436</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>155</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addButton</sender>
+   <signal>clicked()</signal>
+   <receiver>sourceEditDialog</receiver>
+   <slot>slot_addButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>506</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_addButtonClicked()</slot>
+  <slot>slot_delButtonClicked()</slot>
+  <slot>slot_discardButtonClicked()</slot>
+  <slot>slot_submitButtonClicked()</slot>
+  <slot>slot_browseButtonClicked()</slot>
+  <slot>slot_tableClicked()</slot>
+ </slots>
+</ui>

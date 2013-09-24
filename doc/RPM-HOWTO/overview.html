@@ -1,0 +1,182 @@
+<HTML
+><HEAD
+><TITLE
+>Overview</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.44"><LINK
+REL="HOME"
+TITLE="RPM HOWTO"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="RPM HOWTO"
+HREF="index.html"><LINK
+REL="NEXT"
+TITLE="General Information"
+HREF="gen-info.html"><LINK
+REL="STYLESHEET"
+TYPE="text/css"
+HREF="oswg.css"></HEAD
+><BODY
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>RPM HOWTO: RPM at Idle</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="index.html"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="gen-info.html"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="OVERVIEW"
+>2. Overview</A
+></H1
+><P
+>      First, let me state some of the philosophy behind RPM.  One design goal
+      was to allow the use of "pristine" sources.  With RPP (our former
+      packaging system of which <I
+CLASS="EMPHASIS"
+>none</I
+> of RPM is derived),
+      our source packages were the "hacked" sources that we built from.
+    </P
+><P
+>      Theoretically, one could install a source RPP and then
+      <I
+CLASS="EMPHASIS"
+>make</I
+> it with no problems.  But the sources were not
+      the original ones, and there was no reference as to what changes we had to
+      make to get it to build.  One had to download the pristine sources
+      separately.  With RPM, you have the pristine sources along with patches
+      that we used to compile from.  We see this as a big advantage.  Why?
+      Several reasons.  For one, if a new version of a program comes out, you
+      don't necessarily have to start from scratch to get it to compile under
+      RHL.  You can look at the patch to see what you <I
+CLASS="EMPHASIS"
+>might</I
+>
+      need to do.  All the compile-in defaults are easily visible this way.
+    </P
+><P
+>      RPM is also designed to have powerful querying options.  You can do
+      searches through your entire database for packages or just certain files.
+      You can also easily find out what package a file belongs to and where it
+      came from.  The RPM files themselves are compressed archives, but you can
+      query individual packages easily and <I
+CLASS="EMPHASIS"
+>quickly</I
+> because
+      of a custom binary header added to the package with everything you could
+      possibly need to know contained in uncompressed form.  This allows for
+      <I
+CLASS="EMPHASIS"
+>fast</I
+> querying.
+    </P
+><P
+>      Another powerful feature is the ability to verify packages.  If you are
+      worried that you deleted an important file for some package, just verify
+      it.  You will be notified of any anomalies.  At that point, you can
+      reinstall the package if necessary.  Any config files that you had are
+      preserved as well.
+    </P
+><P
+>      We would like to thank the folks from the BOGUS distribution for many of
+      their ideas and concepts that are included in RPM.  While RPM was
+      completely written by Red Hat, Inc., its operation is based on code
+      written by BOGUS (PM and PMS).
+    </P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="index.html"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="gen-info.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>RPM HOWTO</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>General Information</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

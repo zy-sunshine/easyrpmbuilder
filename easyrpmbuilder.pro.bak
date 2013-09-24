@@ -1,0 +1,64 @@
+TEMPLATE = app
+QT = gui core
+CONFIG += qt warn_on console release
+DESTDIR = bin
+OBJECTS_DIR = build
+MOC_DIR = build
+UI_DIR = build
+FORMS = ui/easyrpmMainwindow.ui \
+ ui/settings.ui \
+ ui/templateeditor.ui \
+ ui/documentViewer.ui \
+ ui/logview.ui \
+ ui/sectionedit.ui \
+ ui/changelogDialog.ui \
+ ui/sourceEditDialog.ui \
+ ui/patchEditDialog.ui \
+ ui/specialOptionDialog.ui \
+ ui/showMacrosDialog.ui \
+ ui/macroViewContainer.ui \
+ ui/editPrivateMacroFileDialog.ui \
+ ui/execScriptDialog.ui \
+ ui/packageResultDialog.ui \
+ ui/configToolBarDialog.ui
+HEADERS = src/easyrpmmainwindowimpl.h \
+ src/settings.h \
+ src/templateeditor.h \
+ src/documentviewer.h \
+ src/logview.h \
+ src/changelogdialog.h \
+ src/sectionedit.h \
+ src/sourceeditdialog.h \
+ src/patcheditdialog.h \
+ src/editspecialoptions.h \
+ src/highlighter.h \
+ src/showmacros.h \
+ src/macroviewcontainer.h \
+ src/editprivatemacrofile.h \
+ src/execscriptdialog.h \
+ src/packageresultdialog.h \
+ src/configtoolbardialog.h
+SOURCES = src/easyrpmmainwindowimpl.cpp \
+ src/main.cpp \
+ src/settings.cpp \
+ src/templateeditor.cpp \
+ src/documentviewer.cpp \
+ src/logview.cpp \
+ src/sectionedit.cpp \
+ src/changelogdialog.cpp \
+ src/sourceeditdialog.cpp \
+ src/patcheditdialog.cpp \
+ src/editspecialoptions.cpp \
+ src/highlighter.cpp \
+ src/showmacros.cpp \
+ src/macroviewcontainer.cpp \
+ src/editprivatemacrofile.cpp \
+ src/execscriptdialog.cpp \
+ src/packageresultdialog.cpp \
+ src/configtoolbardialog.cpp
+RESOURCES += src/icons.qrc
+TRANSLATIONS += src/translations/german.ts \
+ src/translations/english.ts \
+ src/translations/spanish.ts \
+ src/translations/brazilian.ts \
+ src/translations/italian.ts
